@@ -16,7 +16,6 @@ function playGame(){
 }
 
 function getRandomValue(inputFrom,inputTo){
-    inputFrom = Math.ceil(inputFrom);
-    inputTo= Math.floor(inputTo);
-    return Math.floor(Math.random() * (inputTo - inputFrom)) + inputTo;
+    let randomValue = Math.floor(Math.random() * (+inputTo - +inputFrom)) + +inputTo;
+    return randomValue;
 }
